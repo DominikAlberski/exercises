@@ -9,7 +9,7 @@ end
 def odd_sum(num)
   # (0..num).inject { |mem, var| var.odd? ? mem += var : mem }
   # rozwiązanie 1 linijkowe wydaje się wolniejsze:
-  num.even? ? ((1 + num - 1) / 2 ) * ((num + 1) / 2) : ((1 + num) / 2 ) * ((num + 2) / 2)
+  num.even? ? (num / 2 ) * ((num + 1) / 2) : ((1 + num) / 2 ) * ((num + 2) / 2)
   # num.even? ? num -= 1 : num
   # ((1 + num) / 2 ) * ((num + 2) / 2)
 end
